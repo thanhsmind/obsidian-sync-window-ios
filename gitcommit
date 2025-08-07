@@ -1,0 +1,26 @@
+#!/bin/bash
+cd /Users/thanhnguyen/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/PKM
+# 1. Add all changes
+git add .
+
+# 2. Commit (dùng tham số truyền vào cho message hoặc lấy default)
+if [ -z "$1" ]; then
+  msg="Update code $(date '+%Y-%m-%d %H:%M:%S')"
+else
+  msg="$1"
+fi
+git commit -m "$msg"
+
+# 3. Kéo code mới nhất về (rebase để giảm khả năng conflict)
+git pull --rebase
+
+# Nếu pull/rebase có conflict thì dừng lại
+if [ $? -ne 0 ]; then
+  echo "Có conflict khi pull code. Vui lòng xử lý rồi commit lại!"
+  exit 1
+fi
+
+# 4. Push code lên remote
+git push
+
+echo "Đã add, commit, pull và push thành công!"

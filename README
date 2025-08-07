@@ -1,0 +1,16 @@
+# Obsidian Sync Window - IOS
+
+![obsidian-window-sync-ios.png]
+
+
+## Chuẩn bị các script liên quan việc sync
+Thêm 2 file vào thư mục gốc của Obsidian Vault
+- `git_auto_push.ps1`
+- `gitcommit`
+
+Cập nhật lại đường dẫn của Vault cho đúng
+
+
+## Setup Task Schedule
+- Thiết lập Task Schedule 1 phút chạy 1 lần cho Window theo hướng dẫn [Cách chạy script PowerShell tự động mỗi 1 phút bằng Task Scheduler.md](Cách chạy script PowerShell tự động mỗi 1 phút bằng Task Scheduler.md)
+- Thiết lập chạy Task Schedule trên macos theo hướng dẫn [Setup chạy schedule bằng launchd trên macos.md](Setup chạy schedule bằng launchd trên macos.md)
