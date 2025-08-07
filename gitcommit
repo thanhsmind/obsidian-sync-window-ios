@@ -1,4 +1,5 @@
 #!/bin/bash
+# Đường dẫn tới Vault của bạn
 cd /Users/thanhnguyen/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/PKM
 # 1. Add all changes
 git add .
