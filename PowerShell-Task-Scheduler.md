@@ -32,7 +32,7 @@ Mục đích tự động commit Obsidian code
    - **Add arguments (optional):** nhập:
 
 ```
--File "D:\Dropbox\PKM\git_auto_push.ps1" -location "D:\Dropbox\PKM"
+-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File "D:\Dropbox\PKM\git_auto_push.ps1" -location "D:\Dropbox\PKM"
 ```
 
 (Thay đường dẫn script và thư mục git của bạn cho đúng) 7. **Tab Conditions \& Settings**: Cấu hình thêm tuỳ chọn nếu cần (ví dụ không tắt task khi pin yếu). 8. Nhấn **OK**, nhập mật khẩu tài khoản Windows nếu được yêu cầu.
